@@ -1,0 +1,26 @@
+[33mcommit 7a5ad7e063564482f7d5c5fc9421898d2818b75f[m
+Merge: 19348a2 87d2982
+Author: X3PY <37537209+X3PY@users.noreply.github.com>
+Date:   Sat May 19 12:11:29 2018 +0900
+
+    Merge pull request #1 from Cecilia-L/youngjae
+    
+    youngjae
+
+[33mcommit 87d2982105eb8c8f9e4b483ab6c66d8060529a9c[m
+Author: norrard148 <norrard@likelion.org>
+Date:   Sat May 19 12:07:09 2018 +0900
+
+    youngjae
+
+[33mcommit 19348a2ca25ee86407ab1e61720384f095328aa8[m
+Author: Cecilia_L <dbsql1105@likelion.org>
+Date:   Fri May 18 13:27:09 2018 +0900
+
+    Home 컨트롤러 및 Index 액션 생성
+
+[33mcommit 52758d47a70e5bba08247bb34c36b7eced4468b7[m
+Author: Cecilia_L <dbsql1105@likelion.org>
+Date:   Fri May 18 13:12:36 2018 +0900
+
+    프로젝트 세팅
