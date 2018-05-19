@@ -1,3 +1,4 @@
+
 <%= form_for(post) do |f| %>
   <% if post.errors.any? %>
     <div id="error_explanation">
@@ -11,19 +12,25 @@
     </div>
   <% end %>
 
-  <div class="field">
-    <%= f.label :image %>
-    <%= f.file_field :image,
-        accept: 'image/png,image/gif,image/jpeg' %>
-  </div>
-
-  <div class="field">
+<div class="field cc">
     <%= f.label :content %>
-    <%= f.text_area :content %>
+    <%= f.text_field :content %>
   </div>
 
+  
+  <div class="fileinput fileinput-new" data-provides="fileinput">
+    <div class="post-new-bar">
+      <%= f.file_field  :image, class: "a", accept: 'image/png,image/gif,image/jpeg' %>
+      <span class="post-new-bar-remove">
+      <a href="#" class="b" data-dismiss="fileinput">Remove</a></span>
+    </div>
+    <div class="fileinput-preview fileinput-exists thumbnail dd" style="width: 600px; height:auto;"></div>
     
-  <div class="actions">
-    <%= f.submit %>
   </div>
+
+  <div class="actions">
+    <%= f.submit "Create", class: "post-new-bar-create"%>
+  </div>
+
 <% end %>
+

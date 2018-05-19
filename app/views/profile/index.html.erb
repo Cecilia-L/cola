@@ -26,8 +26,8 @@
         <h1>Van Gogh <a href=
         "#" data-target="slide-out" class= "sidenav-trigger"><i class="small material-icons">settings</i></a></h1>
         <p> Posts 23 Following 24 Follower 54</p>
-        <p class="profile-comment">I really want to capture the light.</p>
-        
+        <%# <p class="profile-comment">I really want to capture the light.</p> %>
+        <a class="waves-effect waves-light btn new-post" href="/posts/new">New Post</a>
         </div>
     </div>
 
@@ -39,11 +39,11 @@
                     <li class="tab"><a href="#">Following Pages</a></li>
                     <li class="tab"><a href="#">BookMark</a></li>
                 </ul>
+             
             </div>
         </nav>
 
-    
-        <div>
+        <div class="my-page">
             <%@posts.each do |a|%>
            <img src="<%=a.image%>"> 
                       <%end%>

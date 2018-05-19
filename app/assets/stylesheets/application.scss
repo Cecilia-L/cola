@@ -10,13 +10,12 @@ html {
 
 body {
     width:100%;
-    height: 100%;
+    height: auto;
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
     align-items: center;
     nav {
-      
         height: 5%;
         background-color:rgba(255, 255, 255, 0);
         -webkit-box-shadow: none;
@@ -48,7 +47,7 @@ body {
     width:100%;
     height: 90%;
     position:fixed;
-  overflow:hidden;
+     overflow:hidden;
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
@@ -156,13 +155,13 @@ body {
     justify-content: flex-start;
     align-items: center;
     width: 100%;
-    overflow: scroll;
+    
         .profile-head {
             display: flex;
             flex-direction: row;
             justify-content: center;
             align-items: center;
-            height: 600px;
+            height: 550px;
             width: 50%;
             
             .profile-image  {
@@ -218,7 +217,7 @@ body {
                     font-weight: bold;
                     font-size: 17px;
                     letter-spacing: 1.2px;
-                
+                    margin-top: 10px;
                 }
                 .profile-comment {
                     color: rgb(0, 0, 0);
@@ -226,7 +225,16 @@ body {
                 }
                 a {
                     color: black;
-                    margin-top: 10px;
+                    margin-top: 20px;
+                    text-transform: none;
+                }
+                .new-post {
+                    margin-left: 35%;
+                    border: 0.5px solid grey;
+                    background-color: white;
+                    border-radius: 3px;
+                    -webkit-box-shadow: 0 2px 2px 0 rgba(255, 255, 255, 0.14), 0 3px 1px -2px rgba(255, 255, 255, 0.12), 0 1px 5px 0 rgba(0,0,0,0.2);
+                    box-shadow: 0 2px 2px 0 rgba(255, 255, 255, 0.14), 0 3px 1px -2px rgba(255, 255, 255, 0.12), 0 1px 5px 0 rgba(255, 255, 255, 0.2);
                 }
             }
         }
@@ -259,14 +267,25 @@ body {
               }
                
             }
-          }
-          
+        }
+        .my-page {
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-start;
+            align-items: center;
+        }
+       
+        
+        
+    
 }
 
 .login, .signup {
     background-image: url('login6.jpg');
     background-size: 100% 100%;
-    height: 95%;
+    position: fixed;
+    z-index: -1;
+    height: 100%;
     width: 100%;
     display: flex;
     justify-content: flex-start;
@@ -331,4 +350,122 @@ body {
     .signup-form {
         height: 550px;
     }
+}
+
+p.alert, p.notice {
+    position: fixed;
+}
+
+
+
+
+.post-new {
+    padding: 0px;
+    font-family: 'Poiret One', cursive;
+    width: 600px;
+    position: fixed;
+    top: 10%;
+    height: 700px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    .cc {
+        .character-counter {
+            display: none;
+        }
+    }
+    #post_image {
+        display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+       
+    }
+    .new_post {
+       
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: center;
+        input:not([type]):focus:not([readonly]), input[type=text]:not(.browser-default):focus:not([readonly]), input[type=password]:not(.browser-default):focus:not([readonly]), input[type=email]:not(.browser-default):focus:not([readonly]), input[type=url]:not(.browser-default):focus:not([readonly]), input[type=time]:not(.browser-default):focus:not([readonly]), input[type=date]:not(.browser-default):focus:not([readonly]), input[type=datetime]:not(.browser-default):focus:not([readonly]), input[type=datetime-local]:not(.browser-default):focus:not([readonly]), input[type=tel]:not(.browser-default):focus:not([readonly]), input[type=number]:not(.browser-default):focus:not([readonly]), input[type=search]:not(.browser-default):focus:not([readonly]), textarea.materialize-textarea:focus:not([readonly]) {
+            border-bottom: 1px solid #464646;
+            -webkit-box-shadow: 0 0px 0 0 #ffffff;
+            box-shadow: 0 0px 0 0 #ffffff;
+            }  
+        .post-new-bar-create {
+            background-color: white;
+            border: 1px solid rgb(197, 197, 197);
+            color: rgb(145, 145, 145);
+            border-radius: 3px;
+            height: 30px;
+            width: 70px;
+            font-family: 'Poiret One', cursive;
+        }
+        .post-new-bar {
+            .character-counter {
+                display: none;
+            }
+            
+            width: 600px;
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            #post_image {
+                display: hidden;
+                input {
+                    display: hidden;
+                }
+            }
+            .post-new-bar-remove {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            width: 80px;
+            border: 1px solid rgb(197, 197, 197);
+            border-radius: 3px;
+            height: 35px;
+            .b {
+              
+               color: rgb(20, 20, 20);
+                
+            }
+            }
+            
+           .fileinput-new {
+            .character-counter {
+                display: none;
+            }
+           }
+           .a {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            width: 500px;
+            text-align: center;
+            color: white;
+            height: 40px;
+            input {
+                background-color: none;
+            }
+        }
+           
+            span, a {
+                padding: 0px;
+            }
+            .dd {
+                width: 600px;
+                height: 600px;
+            }
+        }
+    }
+    img {
+        max-width: 600px;
+        height: auto;
+    }
+    .cc {
+        width: 600px;
+    }
+    
 }
