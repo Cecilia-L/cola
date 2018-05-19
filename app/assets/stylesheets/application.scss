@@ -1,0 +1,332 @@
+
+ * {
+    margin: 0px;
+    padding: 0px;
+}
+html {
+    width:100%;
+    height: 100%;
+}
+
+body {
+    width:100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    nav {
+      
+        height: 5%;
+        background-color:rgba(255, 255, 255, 0);
+        -webkit-box-shadow: none;
+        box-shadow: none;
+        .nav-wrapper {
+            height:100%;
+            ul {
+                margin-right: 2%;
+                li {
+                    height: 100%;
+                    a{
+                        height: 100%;
+                        font-size: 120%;
+                        color: black;
+                        // font-family: 'Inconsolata', monospace;
+                        font-family: 'Unica One', cursive;
+                    }
+                   
+                }
+            }
+        }
+       
+}
+
+.home {
+    background-image: url("main2.jpg");
+    background-size: 100% 100%; 
+    top: 10%;
+    width:100%;
+    height: 90%;
+    position:fixed;
+  overflow:hidden;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    }
+    .search {
+        width: 35%;
+        height: 40%;
+        margin-top: 12%;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: center;
+        h1 {
+            margin: 0px;
+            font-size:100px;
+            font-family: 'Poiret One', cursive;    
+        }
+        h2 {
+            margin: 0px;
+            font-size: 40px;
+            font-family: 'Poiret One', cursive;
+        }
+        .box {
+            width: 100%;
+            height: 13%;
+            border: 1px solid rgb(218, 218, 218);
+            border-radius: 5px;
+            input:not([type]), input[type=text]:not(.browser-default), input[type=password]:not(.browser-default), input[type=email]:not(.browser-default), input[type=url]:not(.browser-default), input[type=time]:not(.browser-default), input[type=date]:not(.browser-default), input[type=datetime]:not(.browser-default), input[type=datetime-local]:not(.browser-default), input[type=tel]:not(.browser-default), input[type=number]:not(.browser-default), input[type=search]:not(.browser-default), textarea.materialize-textarea{
+                border-bottom: none;
+            }
+            form {
+                height: 100%;
+                display: flex;
+                flex-direction: row;
+                justify-content: space-between;
+                span {
+                    display: none;
+                }
+                
+                .inputA {
+                    width:90%;
+                    height:100%;
+                    margin:0px;
+                    margin-left: 1%;
+                    color: rgb(223, 223, 223);
+                    font-family: 'Poiret One', cursive;
+                  
+                }  
+                input:not([type]):focus:not([readonly]), input[type=text]:not(.browser-default):focus:not([readonly]), input[type=password]:not(.browser-default):focus:not([readonly]), input[type=email]:not(.browser-default):focus:not([readonly]), input[type=url]:not(.browser-default):focus:not([readonly]), input[type=time]:not(.browser-default):focus:not([readonly]), input[type=date]:not(.browser-default):focus:not([readonly]), input[type=datetime]:not(.browser-default):focus:not([readonly]), input[type=datetime-local]:not(.browser-default):focus:not([readonly]), input[type=tel]:not(.browser-default):focus:not([readonly]), input[type=number]:not(.browser-default):focus:not([readonly]), input[type=search]:not(.browser-default):focus:not([readonly]), textarea.materialize-textarea:focus:not([readonly]) {
+                    border-bottom: 0px solid #ffffff00;
+                    -webkit-box-shadow: 0 0px 0 0 #26a69a;
+                    box-shadow: 0 0px 0 0 #26a69a;
+                    background-color: white;
+                }
+                .inputB {
+                    
+                    background-image: url(영재돋보기.svg);
+                    background-repeat:no-repeat;
+                    background-position: center 65%;
+                    background-size: 40%, 40%;
+                    width: 8%;
+                    height:100%;
+                    padding: 0px;
+                    text-align: center;
+                    .waves-button-input {
+                        text-transform: none;    
+                        height: 100%;
+                        width: 100%;
+                        color: rgb(223, 223, 223);
+                    
+                    }
+                  
+                }
+                
+            }
+           
+            
+        }
+        
+    }
+}
+
+
+.pbar {
+    position: fixed;
+    left: 0;
+    height:100%;
+    z-index: 997;
+   
+    .sidenav-trigger {
+        height:100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        i {
+            color: black;
+        }
+    }
+}
+
+.profile {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+        .profile-head {
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            align-items: center;
+            height: 400px;
+            width: 50%;
+            
+            .profile-image  {
+                height: 200px;
+                border-radius: 3px;
+                width:200px;
+                
+            }
+
+            .sidenav {
+                .background {
+                    img {
+                        height: 150%;
+                        width: auto;
+                    }
+                    
+                }
+                
+                .subheader {
+                    height: 5%;
+                    padding: 0 17px;
+                    font-size: 20   px;
+                    // font-family: 'Poiret One', cursive;
+                    font-weight: normal;
+                    color: rgb(190, 190, 190);
+                    // border-bottom: 1px solid grey;
+                }
+
+
+                .waves-effect {
+                    padding-left: 30px;
+                    font-size: 16px;
+                    // font-family: 'Poiret One', cursive;
+                    font-weight: lighter;
+                    color: rgb(0, 0, 0);
+                }
+            }
+          
+
+            .profile-head-p {
+                display: flex;
+                flex-direction: column;
+                justify-content: flex-start;
+                align-items: flex-start;
+                margin-left: 8%;
+            
+                h1 {
+                    margin: 0px;
+                    font-family: 'Poiret One', cursive;
+                }
+                p {
+                    font-family: 'Poiret One', cursive;
+                    font-weight: bold;
+                    font-size: 17px;
+                    letter-spacing: 1.2px;
+                
+                }
+                .profile-comment {
+                    color: rgb(0, 0, 0);
+                    font-weight: lighter;
+                }
+                a {
+                    color: black;
+                    margin-top: 10px;
+                }
+            }
+        }
+
+        .profile-container {
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-start;
+            align-items: center;
+          .nav-extended {
+              width: auto;
+              margin: 10px;
+              background-color: white;
+              .nav-content {
+                .tabs .tab a:focus, .tabs .tab a:focus.active {
+                    background-color: rgb(255, 255, 255);
+                    outline: none;
+                }
+                .tabs.tabs-transparent .tab a:hover, .tabs.tabs-transparent .tab a.active {
+                    color: rgb(0, 0, 0);
+                }
+                .indicator {
+                     background-color: rgb(0, 0, 0);
+                 }
+                a {
+                    text-transform: none;
+                    color: black;
+                    // font-family: 'Unica One', cursive;
+                 }
+              }
+               
+            }
+          }
+          
+}
+
+.login, .signup {
+    background-image: url('login6.jpg');
+    background-size: 100% 100%;
+    height: 95%;
+    width: 100%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    .login-form, .signup-form {
+        margin-left: 20%;
+       height: 500px;
+       width: 350px;
+       display: flex;
+       flex-direction: column;
+       justify-content: flex-start;
+       align-items: center;
+       font-family: 'Poiret One', cursive;  
+       form {
+           width: 100%;
+           display: flex;
+           flex-direction: column;
+           justify-content: flex-start;
+           align-items: center;
+           .field {
+               width: 100%;
+               margin-bottom: 5%;
+               input:not([type]):focus:not([readonly]), input[type=text]:not(.browser-default):focus:not([readonly]), input[type=password]:not(.browser-default):focus:not([readonly]), input[type=email]:not(.browser-default):focus:not([readonly]), input[type=url]:not(.browser-default):focus:not([readonly]), input[type=time]:not(.browser-default):focus:not([readonly]), input[type=date]:not(.browser-default):focus:not([readonly]), input[type=datetime]:not(.browser-default):focus:not([readonly]), input[type=datetime-local]:not(.browser-default):focus:not([readonly]), input[type=tel]:not(.browser-default):focus:not([readonly]), input[type=number]:not(.browser-default):focus:not([readonly]), input[type=search]:not(.browser-default):focus:not([readonly]), textarea.materialize-textarea:focus:not([readonly]) {
+                border-bottom: 1px solid #464646;
+                -webkit-box-shadow: 0 0px 0 0 #ffffff;
+                box-shadow: 0 0px 0 0 #ffffff;
+                }  
+               .character-counter {
+                display: none;
+                }
+            }
+        .a {
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+        } 
+        .actions {
+            margin-top: 10px;
+            
+            input {
+                width: 60px;
+                height: 30px;
+                border-radius: 3px;
+                background-color: rgb(255, 255, 255);
+                border: 1px solid gray;
+                color: rgb(97, 97, 97);
+            } 
+            
+        }
+    
+        a {
+            color: rgb(121, 121, 121);
+            font-weight: bold;
+        }
+    }
+   }
+}
+
+
+.signup {
+    
+    .signup-form {
+        height: 550px;
+    }
+}
