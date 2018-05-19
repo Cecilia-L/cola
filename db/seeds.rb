@@ -5,3 +5,6 @@
 #
 #   movies = Movie.create([{ name: 'Star Wars' }, { name: 'Lord of the Rings' }])
 #   Character.create(name: 'Luke', movie: movies.first)
+require 'securerandom'
+50.times do Poll.create( :image => "My Poll #{SecureRandom.hex(3)}", :content => SecureRandom.hex(128) )
+end

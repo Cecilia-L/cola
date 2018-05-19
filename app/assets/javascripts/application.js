@@ -12,7 +12,10 @@
 //
 //= require jquery
 //= require jquery_ujs
+
+//= require turbolinks
 //= require materialize
+//= require jquery.infinitescroll
 
 document.addEventListener('DOMContentLoaded', function() {
     var elems = document.querySelectorAll('.sidenav');
@@ -47,3 +50,25 @@ document.addEventListener('DOMContentLoaded', function() {
 //   $('html').css('height', $(window).height() );
 
 // });
+
+$(document).ready(function(){
+  $("#my").show();
+    $("#my1").hide();
+    $("#my2").hide();
+  $("#mypage").click(function(){
+    $("#my").show();
+    $("#my1").hide();
+    $("#my2").hide();
+  });
+  $("#followingpages").click(function(){
+    $("#my").hide();
+    $("#my1").show();
+    $("#my2").hide();
+  });
+  $("#bookmark").click(function(){
+    $("#my").hide();
+    $("#my1").hide();
+    $("#my2").show();
+  });
+
+});

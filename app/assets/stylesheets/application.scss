@@ -155,12 +155,14 @@ body {
     flex-direction: column;
     justify-content: flex-start;
     align-items: center;
+    width: 100%;
+
         .profile-head {
             display: flex;
             flex-direction: row;
             justify-content: center;
             align-items: center;
-            height: 400px;
+            height: 600px;
             width: 50%;
             
             .profile-image  {
@@ -209,9 +211,11 @@ body {
             
                 h1 {
                     margin: 0px;
+                    margin-bottom:3%;
                     font-family: 'Poiret One', cursive;
                 }
-                p {
+                p {margin-left:1%;
+                    margin-bottom: 2%;
                     font-family: 'Poiret One', cursive;
                     font-weight: bold;
                     font-size: 17px;
@@ -219,6 +223,7 @@ body {
                 
                 }
                 .profile-comment {
+                    margin-left:1%;
                     color: rgb(0, 0, 0);
                     font-weight: lighter;
                 }
@@ -234,10 +239,11 @@ body {
             flex-direction: column;
             justify-content: flex-start;
             align-items: center;
+            width: 100%;
           .nav-extended {
               width: auto;
               margin: 10px;
-              background-color: white;
+              background-color: none;
               .nav-content {
                 .tabs .tab a:focus, .tabs .tab a:focus.active {
                     background-color: rgb(255, 255, 255);
@@ -255,10 +261,9 @@ body {
                     // font-family: 'Unica One', cursive;
                  }
               }
-               
-            }
-          }
-          
+            }   
+        }
+            
 }
 
 .login, .signup {
