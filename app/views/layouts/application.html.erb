@@ -26,7 +26,15 @@
         <ul id="nav-mobile" class="right hide-on-med-and-down">
           <li><a href="/">MAIN</a></li>
           <li><a href='/profile/index'>INTRODUCTION</a></li>
-          <li><a href='/users/sign_in'>LOGIN</a></li>
+          <% if user_signed_in? %>
+          <li>
+           <%= link_to('LOGOUT', destroy_user_session_path, method: :delete) %>        
+          </li>
+          <% else %>
+          <li>
+          <%= link_to('LOGIN', new_user_session_path)  %>  
+          </li>
+          <% end %>
         </ul>
       </div>
     </nav>
