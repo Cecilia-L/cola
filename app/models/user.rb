@@ -4,4 +4,9 @@ class User < ApplicationRecord
   devise :database_authenticatable, :registerable,
          :recoverable, :rememberable, :trackable, :validatable
   has_many :posts
+  has_many :likes
+
+  def is_like?(post)
+    Like.find_by(user_id: self.id, post_id: post.id).present?
+  end
 end
