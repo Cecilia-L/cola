@@ -6,4 +6,9 @@ class HomeControllerTest < ActionDispatch::IntegrationTest
     assert_response :success
   end
 
+  test "should get introduction" do
+    get home_introduction_url
+    assert_response :success
+  end
+
 end
