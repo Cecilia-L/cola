@@ -12,5 +12,38 @@
 //
 //= require jquery
 //= require jquery_ujs
-//= require turbolinks
-//= require_tree .
+
+
+document.addEventListener('DOMContentLoaded', function() {
+    var elems = document.querySelectorAll('.sidenav');
+    var instances = M.Sidenav.init(elems);
+  });
+
+  // Initialize collapsible (uncomment the lines below if you use the dropdown variation)
+  // var collapsibleElem = document.querySelector('.collapsible');
+  // var collapsibleInstance = M.Collapsible.init(collapsibleElem, options);
+
+  // Or with jQuery
+
+  $(document).ready(function(){
+    $('.sidenav').sidenav();
+  });
+
+
+
+(function($){
+  $("#comment_content").val("")
+  // $("#comments").append("<li><%= @comment.content %></li>");
+  var html = "<%= escape_javascript(render(partial: 'comments/item', locals: {comment: @comment})) %>";
+  $("#comments").append(html);
+})(jQuery)
+
+// $(document).ready(function(){
+// $('html').css('width', screen.width());
+// $('html').css('height', $(window).height());
+// });
+// $(window).resize(function(){
+//   $('html').css('width', screen.width());
+//   $('html').css('height', $(window).height() );
+
+// });
