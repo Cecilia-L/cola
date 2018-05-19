@@ -16,6 +16,7 @@ body {
     justify-content: flex-start;
     align-items: center;
     nav {
+      
         height: 5%;
         background-color:rgba(255, 255, 255, 0);
         -webkit-box-shadow: none;
@@ -236,6 +237,7 @@ body {
           .nav-extended {
               width: auto;
               margin: 10px;
+              background-color: white;
               .nav-content {
                 .tabs .tab a:focus, .tabs .tab a:focus.active {
                     background-color: rgb(255, 255, 255);
@@ -257,4 +259,74 @@ body {
             }
           }
           
+}
+
+.login, .signup {
+    background-image: url('login6.jpg');
+    background-size: 100% 100%;
+    height: 95%;
+    width: 100%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    .login-form, .signup-form {
+        margin-left: 20%;
+       height: 500px;
+       width: 350px;
+       display: flex;
+       flex-direction: column;
+       justify-content: flex-start;
+       align-items: center;
+       font-family: 'Poiret One', cursive;  
+       form {
+           width: 100%;
+           display: flex;
+           flex-direction: column;
+           justify-content: flex-start;
+           align-items: center;
+           .field {
+               width: 100%;
+               margin-bottom: 5%;
+               input:not([type]):focus:not([readonly]), input[type=text]:not(.browser-default):focus:not([readonly]), input[type=password]:not(.browser-default):focus:not([readonly]), input[type=email]:not(.browser-default):focus:not([readonly]), input[type=url]:not(.browser-default):focus:not([readonly]), input[type=time]:not(.browser-default):focus:not([readonly]), input[type=date]:not(.browser-default):focus:not([readonly]), input[type=datetime]:not(.browser-default):focus:not([readonly]), input[type=datetime-local]:not(.browser-default):focus:not([readonly]), input[type=tel]:not(.browser-default):focus:not([readonly]), input[type=number]:not(.browser-default):focus:not([readonly]), input[type=search]:not(.browser-default):focus:not([readonly]), textarea.materialize-textarea:focus:not([readonly]) {
+                border-bottom: 1px solid #464646;
+                -webkit-box-shadow: 0 0px 0 0 #ffffff;
+                box-shadow: 0 0px 0 0 #ffffff;
+                }  
+               .character-counter {
+                display: none;
+                }
+            }
+        .a {
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+        } 
+        .actions {
+            margin-top: 10px;
+            
+            input {
+                width: 60px;
+                height: 30px;
+                border-radius: 3px;
+                background-color: rgb(255, 255, 255);
+                border: 1px solid gray;
+                color: rgb(97, 97, 97);
+            } 
+            
+        }
+    
+        a {
+            color: rgb(121, 121, 121);
+            font-weight: bold;
+        }
+    }
+   }
+}
+
+
+.signup {
+    
+    .signup-form {
+        height: 550px;
+    }
 }
